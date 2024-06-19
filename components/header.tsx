@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Sidebar, GithubLogo, NotePencil } from '@phosphor-icons/react';
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Sidebar, GithubLogo, NotePencil } from "@phosphor-icons/react";
 
 export function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -15,22 +15,26 @@ export function Header() {
     <>
       <header className="sticky top-0 z-[500] flex items-center justify-between w-full px-4 border-b h-14 shrink-0 dark:bg-slate-800 bg-white backdrop-blur-xl">
         <div className="flex items-center justify-end space-x-2">
-
           {/* <Sidebar size={24} /> */}
           <a href="./">
             <NotePencil size={24} />
           </a>
         </div>
         <span className="inline-flex items-center home-links whitespace-nowrap">
-          <a href="https://developersdigest.tech" rel="noopener" target="_blank">
-            <span className="block sm:inline text-lg sm:text-xl lg:text-2xl font-semibold dark:text-white text-black">answer <span className="linear-wipe">engine</span></span>
+          <a
+            href="https://developersdigest.tech"
+            rel="noopener"
+            target="_blank"
+          >
+            <span className="block sm:inline text-lg sm:text-xl lg:text-2xl font-semibold dark:text-white text-black">
+              Nok <span className="linear-wipe">Protocol</span>
+            </span>
           </a>
         </span>
         <a
           target="_blank"
           href="https://git.new/answr"
           rel="noopener noreferrer"
-
         >
           <GithubLogo size={24} />
         </a>
